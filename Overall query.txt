@@ -1,0 +1,6 @@
+SELECT city_data.*, city_list.country, global_data.avg_temp AS global_temp FROM city_data
+JOIN city_list
+ON city_data.city=city_list.city
+JOIN global_data
+ON city_data.year=global_data.year
+WHERE city_list.city='Munich';

@@ -1,0 +1,8 @@
+SELECT * FROM city_data
+JOIN city_list
+ON city_data.city=city_list.city
+WHERE city_list.city='Munich';
+
+
+SELECT * FROM
+global_data;
